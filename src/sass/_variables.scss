@@ -1,0 +1,47 @@
+// FONTS
+$font-general: 'Noto Sans', sans-serif;
+$font-headings: 'Noto Sans Display', sans-serif;
+
+// FONT WEIGHTS
+$font-weight-black: 900;
+$font-weight-bold: 700;
+$font-weight-regular: 400;
+
+// COLORS
+$white: #fff;
+$light-gray: #d9d9d9;
+$black: #000;
+$blue-1: #0c2f39;
+$blue-2: #155263;
+$blue-3: #1e758d;
+$yellow-1: #ffbb09;
+$yellow-2: #ffc93c;
+$yellow-3: #ffd76f;
+$link-color: $blue-2;
+$link-hover: lighten($blue-2, 15%);
+
+// BREAKPOINTS
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+$breakpoint-desktop: $breakpoint-md;
+
+// CONTAINER WIDTHS
+$container-sm-width: 540px;
+$container-md-width: 720px;
+$container-lg-width: 960px;
+$container-xl-width: 1140px;
+
+// MARGIN / PADDING VALUES
+$small-gutter-mobile: 1rem;
+$small-gutter-desktop: 2rem;
+$large-gutter-mobile: 2rem;
+$large-gutter-desktop: 4rem;
+
+// HEADER
+$header-height-mobile: 65px;
+$header-height-desktop: 75px;
+
+// TRANSITIONS
+$standard-transition: all ease-in-out 150ms;

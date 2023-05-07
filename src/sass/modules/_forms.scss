@@ -1,0 +1,27 @@
+.module-section--form-module {
+	.form-wrapper {
+		display: flex;
+		flex-direction: column;
+
+		@media (min-width: $breakpoint-lg) {
+			flex-direction: row;
+			gap: 2rem;
+		}
+	}
+
+	.form-wrapper .text-content {
+		@media (min-width: $breakpoint-lg) {
+			flex: 5;
+		}
+	}
+
+	.form-wrapper .form {
+		@media (min-width: $breakpoint-lg) {
+			flex: 7;
+		}
+	}
+
+	.form-wrapper .form .nf-form-title {
+		display: none;
+	}
+}

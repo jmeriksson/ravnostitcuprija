@@ -1,0 +1,27 @@
+.container {
+    margin: 0 auto;
+    padding-left: 16px;
+    padding-right: 16px;
+
+    @media (min-width: $breakpoint-sm) {
+        max-width: $container-sm-width;
+    }
+
+    @media (min-width: $breakpoint-md) {
+        max-width: $container-md-width;
+    }
+
+    @media (min-width: $breakpoint-lg) {
+        max-width: $container-lg-width;
+    }
+
+    @media (min-width: $breakpoint-xl) {
+        max-width: $container-xl-width;
+    }
+}
+
+.container--narrow {
+    @media (min-width: $breakpoint-md) {
+        max-width: 720px;
+    }
+}

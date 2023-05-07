@@ -1,0 +1,56 @@
+.module-section--columns-module {
+	.columns-wrapper {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 1rem;
+
+		&.mobile-2 {
+			grid-template-columns: 1fr 1fr;
+		}
+
+		@media (min-width: $breakpoint-md) {
+			gap: 1.5rem;
+
+			&.tablet-1 {
+				grid-template-columns: 1fr;
+			}
+			&.tablet-2 {
+				grid-template-columns: 1fr 1fr;
+			}
+			&.tablet-3 {
+				grid-template-columns: 1fr 1fr 1fr;
+			}
+			&.tablet-4 {
+				grid-template-columns: 1fr 1fr 1fr 1fr;
+			}
+		}
+
+		@media (min-width: $breakpoint-lg) {
+			gap: 2rem;
+			
+			&.desktop-1 {
+				grid-template-columns: 1fr;
+			}
+			&.desktop-2 {
+				grid-template-columns: 1fr 1fr;
+			}
+			&.desktop-3 {
+				grid-template-columns: 1fr 1fr 1fr;
+			}
+			&.desktop-4 {
+				grid-template-columns: 1fr 1fr 1fr 1fr;
+			}
+		}
+	}
+
+	.column {
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+	}
+
+	.column figure img {
+		width: 100%;
+		height: auto;
+	}
+}

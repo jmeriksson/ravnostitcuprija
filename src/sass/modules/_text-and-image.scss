@@ -1,0 +1,36 @@
+.module-section--text-and-image-module {
+	.text-and-image-wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		@extend .standard-flex-gap;
+		
+		@media (min-width: $breakpoint-lg) {
+			flex-direction: row;
+			align-items: center;
+
+			&.image-right {
+				flex-direction: row-reverse;
+			}
+		}
+	}
+
+	.image-wrapper {
+		@media (min-width: $breakpoint-lg) {
+			flex: 50%;
+			align-self: flex-start;
+		}
+
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+
+	.content-wrapper {
+		@media (min-width: $breakpoint-lg) {
+			flex: 50%;
+		}
+	}
+}

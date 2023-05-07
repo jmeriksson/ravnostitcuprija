@@ -1,0 +1,7 @@
+.module-section {
+    @include large-y-margin;
+
+    &:first-child {
+        margin-top: 0;
+    }
+}

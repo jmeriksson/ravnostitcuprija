@@ -1,0 +1,55 @@
+.post-card {
+	display: inline-block;
+	overflow: hidden;
+	box-shadow: 0 0 9px 0 rgba($blue-1, .15);
+	border-radius: 10px;
+	height: auto !important;
+
+	a {
+		text-decoration: none !important;
+		color: inherit;
+	}
+
+	img {
+		width: 100%;
+		height: auto;
+		object-fit: cover;
+		object-position: center;
+	}
+
+	.thumbnail-placeholder {
+		background-color: $light-gray;
+		width: 100%;
+		aspect-ratio: 4/3;
+	}
+}
+
+.post-card__bottom {
+	padding: 1rem;
+
+	h2 {
+		font-size: 1.225rem;
+		font-family: $font-general;
+		font-weight: $font-weight-bold;
+	}
+}
+
+.post-card__meta {
+	p {
+		font-size: .85rem;
+	}
+
+	.excerpt-fade {
+		position: relative;
+
+		&::after {
+			content: "";
+			position: absolute;
+			width: 250%;
+			height: 0.85rem;
+			right: 0;
+			bottom: 0;
+			background: linear-gradient(240deg, $white, transparent);
+		}
+	}
+}

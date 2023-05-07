@@ -1,0 +1,79 @@
+@mixin small-x-margin {
+    margin-left: $small-gutter-mobile;
+    margin-right: $small-gutter-mobile;
+
+    @media (min-width: $breakpoint-desktop) {
+        margin-left: $small-gutter-desktop;        
+        margin-right: $small-gutter-desktop;        
+    }
+}
+
+@mixin small-y-margin {
+    margin-top: $small-gutter-mobile;
+    margin-bottom: $small-gutter-mobile;
+
+    @media (min-width: $breakpoint-desktop) {
+        margin-top: $small-gutter-desktop;        
+        margin-bottom: $small-gutter-desktop;        
+    }
+}
+
+@mixin large-x-margin {
+    margin-left: $large-gutter-mobile;
+    margin-right: $large-gutter-mobile;
+
+    @media (min-width: $breakpoint-desktop) {
+        margin-left: $large-gutter-desktop;        
+        margin-right: $large-gutter-desktop;        
+    }
+}
+
+@mixin large-y-margin {
+    margin-top: $large-gutter-mobile;
+    margin-bottom: $large-gutter-mobile;
+
+    @media (min-width: $breakpoint-desktop) {
+        margin-top: $large-gutter-desktop;        
+        margin-bottom: $large-gutter-desktop;        
+    }
+}
+
+@mixin small-x-padding {
+    padding-left: $small-gutter-mobile;
+    padding-right: $small-gutter-mobile;
+
+    @media (min-width: $breakpoint-desktop) {
+        padding-left: $small-gutter-desktop;        
+        padding-right: $small-gutter-desktop;        
+    }
+}
+
+@mixin small-y-padding {
+    padding-top: $small-gutter-mobile;
+    padding-bottom: $small-gutter-mobile;
+
+    @media (min-width: $breakpoint-desktop) {
+        padding-top: $small-gutter-desktop;        
+        padding-bottom: $small-gutter-desktop;        
+    }
+}
+
+@mixin large-x-padding {
+    padding-left: $large-gutter-mobile;
+    padding-right: $large-gutter-mobile;
+
+    @media (min-width: $breakpoint-desktop) {
+        padding-left: $large-gutter-desktop;        
+        padding-right: $large-gutter-desktop;        
+    }
+}
+
+@mixin large-y-padding {
+    padding-top: $large-gutter-mobile;
+    padding-bottom: $large-gutter-mobile;
+
+    @media (min-width: $breakpoint-desktop) {
+        padding-top: $large-gutter-desktop;        
+        padding-bottom: $large-gutter-desktop;        
+    }
+}

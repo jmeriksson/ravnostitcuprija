@@ -1,0 +1,20 @@
+.single-faq {
+	.single-faq__hero {
+		figure {
+			margin: 0;
+			overflow: hidden;
+			position: relative;
+		}
+
+		figure img {
+			object-fit: cover;
+			object-position: center;
+			width: 100%;
+			height: auto;
+		}
+	}
+
+	.single-faq__content {
+		//
+	}
+}

@@ -1,0 +1,25 @@
+.btn {
+	padding: .5rem 2rem;
+	display: inline-block;
+	text-decoration: none;
+	cursor: pointer;
+	font-size: 1rem;
+}
+
+.btn--primary {
+	background-color: $yellow-1;
+	color: $white;
+	transition: $standard-transition;
+
+	&:hover,
+	&:active,
+	&:focus {
+		background-color: $yellow-2;
+		color: $white;
+	}
+}
+
+.btn--secondary {
+	text-decoration: underline;
+	color: $blue-3;
+}

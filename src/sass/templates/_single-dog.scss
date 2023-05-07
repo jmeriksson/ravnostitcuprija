@@ -1,0 +1,164 @@
+.single-dog {
+	.single-dog-post-first-section {
+		display: flex;
+		flex-direction: column;
+
+		@extend .standard-flex-gap;
+
+		@media (min-width: $breakpoint-lg) {
+			flex-direction: row;
+		}
+	}
+
+	.single-dog-post-hero {
+		position: relative;
+
+		@media (min-width: $breakpoint-lg) {
+			flex: 1 1 calculate-col(5);
+		}
+	}
+
+	.single-dog-post-hero figure {
+		position: relative;
+	}
+
+	.single-dog-post-hero figure .reserved-image-banner {
+		position: absolute;
+		bottom: 2rem;
+		font-size: 2rem;
+		background-color: $yellow-1;
+		color: $blue-2;
+		font-weight: 700;
+		$font-family: $font-headings;
+		text-transform: uppercase;
+		width: 100%;
+		text-align: center;
+		padding: .5rem 0;
+	}
+
+	.single-dog-post-hero figure img {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+	}
+
+	.single-dog-post-main-content {
+		@media (min-width: $breakpoint-lg) {
+			flex: 1 1 calculate-col(7);
+		}
+	}
+
+	.single-dog-post-main-content .dog-tags {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		gap: .5rem;
+
+		a,
+		span {
+			text-decoration: none;
+			background-color: $blue-2;
+			color: $white;
+			padding: .5rem 1rem;
+			font-size: .75rem;
+			line-height: 1;
+			border-radius: 30px;
+			transition: $standard-transition;
+
+			// TODO: If we implement links, add hover effect again,
+			// &:hover,
+			// &:active,
+			// &:focus {
+			// 	background-color: $blue-3;
+			// }
+		}
+	}
+
+	.single-dog-post-main-content .single-dog-post-meta {
+		p {
+			font-weight: $font-weight-bold;
+			margin-top: 0;
+			margin-bottom: .15rem;
+		}
+
+		p a,
+		p span.regular-weight {
+			font-weight: $font-weight-regular;
+			color: $blue-2;
+			text-decoration: none;
+		}
+
+		p a {
+			&:hover,
+			&:active,
+			&:focus {
+				text-decoration: underline;
+			}
+		}
+	}
+
+	.single-dog-post-gallery {
+		.swiper img {
+			object-fit: contain;
+			object-position: center;
+			width: 100%;
+			height: 100%;
+		}
+
+		.swiper-pagination {
+			position: relative;
+			bottom: 0;
+			padding-top: .5rem;
+		}
+
+		.swiper-pagination-bullet {
+			background-color: $blue-2;
+		}
+	}
+
+	.single-dog-post-adoption {
+		display: flex;
+		flex-direction: column;
+
+		@extend .standard-flex-gap;
+
+		@media (min-width: $breakpoint-lg) {
+			flex-direction: row;			
+		}
+	}
+
+	.single-dog-post-adoption-text-content {
+		@media (min-width: $breakpoint-lg) {
+			flex: 1 1 calculate-col(5)
+		}
+	}
+
+	.single-dog-post-adoption-form {
+		@media (min-width: $breakpoint-lg) {
+			flex: 1 1 calculate-col(7)
+		}
+	}
+
+	.reserved-wrapper {
+		display: flex;
+		flex-direction: column;
+
+		@media (min-width: $breakpoint-lg) {
+			flex-direction: row;
+			gap: 2rem;
+		}
+	}
+
+	.reserved-wrapper .single-dog-post-reserved-headline {
+		flex: 3;
+	}
+
+	.reserved-wrapper .single-dog-post-reserved-text-content {
+		flex: 4;
+
+		p:first-child {
+			margin-top: 0;
+		}
+	}
+}

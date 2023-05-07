@@ -1,0 +1,5 @@
+@function calculate-col( $colspan ) {
+	$percent: calc($colspan / 12);
+
+	@return $percent * 100%;
+}

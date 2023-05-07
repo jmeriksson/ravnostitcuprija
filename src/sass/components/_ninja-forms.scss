@@ -1,0 +1,41 @@
+.nf-form-cont {
+	color: $blue-2;
+
+	.nf-before-form-content {
+		font-size: 1rem;
+		color: inherit;
+	}
+
+	.nf-before-form-content nf-section {
+		display: inline-block;
+		margin: 1rem 0;
+	}
+
+	.nf-field-label label {
+		font-weight: $font-weight-regular;
+	}
+
+	.nf-field-element input[type=submit] {
+		@extend .btn;
+		@extend .btn--primary;
+	}
+
+	.nf-field-element .ninja-forms-field {
+		background-color: transparent;
+		border-color: rgba($blue-3, .5);
+		color: inherit;
+
+		&:focus {
+			color: inherit;
+			border-color: $blue-3;
+		}
+	}
+
+	.nf-pass .nf-field-element {
+		border-color: rgba($blue-3, .5);
+	}
+
+	textarea {
+		resize: vertical;
+	}
+}

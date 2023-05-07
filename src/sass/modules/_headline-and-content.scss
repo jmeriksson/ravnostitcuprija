@@ -1,0 +1,18 @@
+.module-section--headline-and-content-module {
+	.headline-and-content {
+		display: flex;
+		flex-direction: column;
+
+		@media (min-width: $breakpoint-lg) {
+			flex-direction: row;
+			gap: 2rem;
+			align-items: flex-start;
+		}
+
+		.content {
+			p:first-child {
+				margin-top: 0;
+			}
+		}
+	}
+}

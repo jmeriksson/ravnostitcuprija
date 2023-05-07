@@ -1,0 +1,21 @@
+@import url(https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@900&family=Noto+Sans:wght@400;700&display=swap);
+.mce-content-body {
+  font-family: "Noto Sans", sans-serif;
+  letter-spacing: 0.05rem;
+  font-weight: 400;
+}
+.mce-content-body .btn {
+  padding: 0.5rem 2rem;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.mce-content-body .btn--primary {
+  background-color: #ffbb09;
+  color: #fff;
+}
+.mce-content-body .btn--secondary {
+  text-decoration: underline;
+  color: #1e758d;
+}
