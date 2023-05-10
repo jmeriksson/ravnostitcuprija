@@ -2,7 +2,7 @@
 /**
  * Page template for page: 404.
  *
- * @package ravnostitcuprija
+ * @package Ravnostitcuprija
  */
 
 get_header();

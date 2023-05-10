@@ -2,7 +2,7 @@
 /**
  * Template: Social section for footer
  * 
- * @package ravnostitcuprija
+ * @package Ravnostitcuprija
  */
 
 $headline = $args['headline'] ?? false;

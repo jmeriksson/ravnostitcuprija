@@ -2,7 +2,7 @@
 /**
 * Search results page
 *
-* @package ravnostitcuprija
+* @package Ravnostitcuprija
 */
 
 get_header();

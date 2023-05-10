@@ -2,7 +2,7 @@
 /**
  * Module: Icon row
  * 
- * @package ravnostitcuprija
+ * @package Ravnostitcuprija
  */
 
 $icons = $args['icons'] ?? [];

@@ -2,7 +2,7 @@
 /**
  * Handles search form logic
  *
- * @package ravnostitcuprija
+ * @package Ravnostitcuprija
  */
 
 class Search_Form extends Loader {

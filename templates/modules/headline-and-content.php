@@ -2,7 +2,7 @@
 /**
  * Module: Headline and content
  * 
- * @package ravnostitcuprija
+ * @package Ravnostitcuprija
  */
 
 $headline = $args['headline'] ?? false;

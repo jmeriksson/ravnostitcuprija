@@ -2,7 +2,7 @@
 /**
 * Dog post archive
 *
-* @package ravnostitcuprija
+* @package Ravnostitcuprija
 */
 
 get_header();

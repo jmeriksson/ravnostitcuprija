@@ -2,7 +2,7 @@
 /**
  * Handles filters of the dog post archive
  *
- * @package ravnostitcuprija
+ * @package Ravnostitcuprija
  */
 
 class Dog_Archive_Filter extends Loader {

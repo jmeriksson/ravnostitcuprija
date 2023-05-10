@@ -2,7 +2,7 @@
 /**
  * Theme header.
  *
- * @package ravnostitcuprija
+ * @package Ravnostitcuprija
  */
 
 ?>

@@ -2,7 +2,7 @@
 /**
  * Module: Text block
  * 
- * @package ravnostitcuprija
+ * @package Ravnostitcuprija
  */
 
 $content = $args['content'];

@@ -2,7 +2,7 @@
 /**
  * This class handles registering ACF fields for the theme.
  *
- * @package ravnostitcuprija
+ * @package Ravnostitcuprija
  */
 
 class ACF_Groups_And_Fields extends Loader {

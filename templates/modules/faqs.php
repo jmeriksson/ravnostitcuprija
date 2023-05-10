@@ -2,7 +2,7 @@
 /**
  * Module: FAQs
  * 
- * @package ravnostitcuprija
+ * @package Ravnostitcuprija
  */
 
 $faq_ids = $args['select_posts'];

@@ -2,7 +2,7 @@
 /**
  * Module: Text and image
  * 
- * @package ravnostitcuprija
+ * @package Ravnostitcuprija
  */
 
 $content = $args['content'] ?? false;

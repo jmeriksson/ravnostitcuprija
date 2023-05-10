@@ -2,7 +2,7 @@
 /**
  * Module: Hero
  * 
- * @package ravnostitcuprija
+ * @package Ravnostitcuprija
  */
 
 $wrapper_classes    = [];

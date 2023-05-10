@@ -2,7 +2,7 @@
 /**
  * Footer template.
  *
- * @package ravnostitcuprija
+ * @package Ravnostitcuprija
  */
 
 $footer_sections = get_field('footer_flexible_content', 'options') ?? [];

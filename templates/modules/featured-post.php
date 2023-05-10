@@ -2,7 +2,7 @@
 /**
  * Module: Featured post
  * 
- * @package ravnostitcuprija
+ * @package Ravnostitcuprija
  */
 
 $featured_post_id = $args['select_post'];

@@ -2,7 +2,7 @@
 /**
  * Card for displaying the dog post type
  *
- * @package ravnostitcuprija
+ * @package Ravnostitcuprija
  */
 
 

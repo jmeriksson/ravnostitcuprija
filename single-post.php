@@ -2,7 +2,7 @@
 /**
 * Single post
 *
-* @package ravnostitcuprija
+* @package Ravnostitcuprija
 */
 
 get_header();

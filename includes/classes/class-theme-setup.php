@@ -2,7 +2,7 @@
 /**
  * Handles the basic setup of the theme.
  *
- * @package ravnostitcuprija
+ * @package Ravnostitcuprija
  */
 
 class Theme_Setup extends Loader {

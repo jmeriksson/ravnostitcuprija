@@ -2,7 +2,7 @@
 /**
  * Main functions file of theme.
  *
- * @package ravnostitcuprija
+ * @package Ravnostitcuprija
  */
 
 require get_stylesheet_directory() . '/includes/helpers.php';
