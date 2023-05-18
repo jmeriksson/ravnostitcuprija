@@ -342,7 +342,7 @@ body.admin-bar .navigation.navigation--fixed {
   position: absolute;
   padding: 1rem;
   background: #fff;
-  border-radius: 4px;
+  border-radius: 8px;
   top: calc(100% + 1.25rem);
   right: -55px;
   z-index: 100;
@@ -376,6 +376,7 @@ body.mobile-menu-is-open .navigation .navigation__search .search-bar {
   background-color: rgba(217, 217, 217, 0.5);
   padding: 0.5rem 1rem;
   flex: 1 1 100%;
+  border-radius: 8px;
 }
 .navigation .navigation__search .search-bar form input[type=text]:focus-visible {
   outline: none;
@@ -650,7 +651,7 @@ body.mobile-menu-is-open .mobile-menu {
   display: inline-block;
   overflow: hidden;
   box-shadow: 0 0 9px 0 rgba(12, 47, 57, 0.15);
-  border-radius: 10px;
+  border-radius: 8px;
   height: auto !important;
 }
 .dog-card a {
@@ -705,7 +706,7 @@ body.mobile-menu-is-open .mobile-menu {
   display: inline-block;
   overflow: hidden;
   box-shadow: 0 0 9px 0 rgba(12, 47, 57, 0.15);
-  border-radius: 10px;
+  border-radius: 8px;
   height: auto !important;
 }
 .post-card a {
@@ -873,6 +874,7 @@ body.mobile-menu-is-open .mobile-menu {
 .module-section--featured-post-module .featured-post__image img {
   width: 100%;
   height: auto;
+  border-radius: 8px;
 }
 .module-section--featured-post-module .featured-post__content {
   display: flex;
@@ -905,6 +907,7 @@ body.mobile-menu-is-open .mobile-menu {
 }
 .module-section--faqs-module details {
   border: 1px solid rgba(12, 47, 57, 0.25);
+  border-radius: 8px;
   color: #155263;
 }
 .module-section--faqs-module details:not(:last-child) {
@@ -1003,6 +1006,7 @@ body.mobile-menu-is-open .mobile-menu {
 .module-section--columns-module .column figure img {
   width: 100%;
   height: auto;
+  border-radius: 8px;
 }
 
 .module-section--text-and-image-module .text-and-image-wrapper {
@@ -1028,6 +1032,7 @@ body.mobile-menu-is-open .mobile-menu {
 .module-section--text-and-image-module .image-wrapper img {
   width: 100%;
   height: auto;
+  border-radius: 8px;
 }
 @media (min-width: 992px) {
   .module-section--text-and-image-module .content-wrapper {
@@ -1316,7 +1321,7 @@ body.post-type-archive-dog .filtering .filtering-form-wrapper form {
   background: #fff;
   padding: 2rem;
   box-shadow: 0 0 9px 0 rgba(12, 47, 57, 0.15);
-  border-radius: 10px;
+  border-radius: 8px;
   width: 80%;
 }
 body.post-type-archive-dog .filtering .filtering-form-wrapper form div:not(:last-of-type) {
