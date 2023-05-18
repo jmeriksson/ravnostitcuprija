@@ -2,7 +2,7 @@
 /**
  * Module: Columns
  * 
- * @package ravnostitcuprija
+ * @package Ravnostitcuprija
  */
 
 $columns = $args['repeater'] ?? false;

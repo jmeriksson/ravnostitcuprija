@@ -2,7 +2,7 @@
 /**
  * Holds all classes.
  *
- * @package ravnostitcuprija
+ * @package Ravnostitcuprija
  */
 
 require get_template_directory() . '/includes/classes/class-loader.php';

@@ -2,7 +2,7 @@
 /**
  * Card for displaying the a standard post
  *
- * @package ravnostitcuprija
+ * @package Ravnostitcuprija
  */
 
 

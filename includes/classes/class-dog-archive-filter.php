@@ -2,7 +2,7 @@
 /**
  * Handles filters of the dog post archive
  *
- * @package ravnostitcuprija
+ * @package Ravnostitcuprija
  */
 
 class Dog_Archive_Filter extends Loader {
@@ -24,10 +24,12 @@ class Dog_Archive_Filter extends Loader {
         add_action( 'pre_get_posts', [ $this, 'filter_posts' ], 10, 1 );
 	}
 
-    // public static function get_all_taxonomies() : array {
-
-    // }
-
+    /**
+     * Filters the dog query.
+     *
+     * @param WP_Query $query
+     * @return WP_Query
+     */
     public function filter_posts( WP_Query $query ) : WP_Query {
         if ( is_admin() ) {
             return $query;

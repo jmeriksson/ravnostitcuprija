@@ -2,7 +2,7 @@
 /**
  * Module: Spotlight
  * 
- * @package ravnostitcuprija
+ * @package Ravnostitcuprija
  */
 
 $headline = $args['headline'] ?? false;

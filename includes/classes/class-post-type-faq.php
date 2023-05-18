@@ -2,7 +2,7 @@
 /**
  * Creates a custom post type: FAQ
  *
- * @package ravnostitcuprija
+ * @package Ravnostitcuprija
  */
 
 class Post_Type_FAQ extends Loader {

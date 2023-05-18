@@ -2,7 +2,7 @@
 /**
  * Creates a custom post type: Dog
  *
- * @package ravnostitcuprija
+ * @package Ravnostitcuprija
  */
 
 class Post_Type_Dog extends Loader {

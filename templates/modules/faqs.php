@@ -2,7 +2,7 @@
 /**
  * Module: FAQs
  * 
- * @package ravnostitcuprija
+ * @package Ravnostitcuprija
  */
 
 $faq_ids = $args['select_posts'];
@@ -25,7 +25,7 @@ if ( ! $faq_ids ) {
             <?php foreach ($faq_ids as $faq_id) : ?>
                 <?php
                 global $post;
-                $post = get_post( $faq_id, OBJECT );
+                $post = get_post( $faq_id );
                 setup_postdata($post)
                 ?>
                 <details>

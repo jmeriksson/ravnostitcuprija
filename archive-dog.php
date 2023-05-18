@@ -2,13 +2,14 @@
 /**
 * Dog post archive
 *
-* @package ravnostitcuprija
+* @package Ravnostitcuprija
 */
 
 get_header();
 
 $headline = get_field('dog_archive_headline', 'options') ?? false;
 $content = get_field('dog_archive_text_content', 'options') ?? false;
+$dog_archive_permalink = get_post_type_archive_link('dog');
 
 $filtering_options = [
     [
@@ -82,7 +83,7 @@ $filtering_options = [
                     <?php echo file_get_contents( get_template_directory() . '/assets/images/icons/filter.svg' ) ?>
                 </button>
                 <div class="filtering-form-wrapper hidden" id="js-filtering-form-wrapper">
-                    <form method="GET" id="dog-archvive-filter-form">
+                    <form action="<?php echo esc_url($dog_archive_permalink); ?>" method="GET" id="dog-archvive-filter-form">
                         <?php foreach ( $filtering_options as $filter ) : ?>
                             <div>
                             <h3 class="h4"><?php echo esc_html( $filter['headline'] ); ?></h3>
@@ -97,7 +98,7 @@ $filtering_options = [
                         <div class="submit-button">
                             <button class="btn btn--primary" type="submit"><?php echo esc_html__('Filter', 'ravnostitcuprija'); ?></button>
                             <?php global $wp; ?>
-                            <a href="<?php echo home_url($wp->request); ?>" class="btn btn--secondary"><?php echo esc_html__('Clear all filters', 'ravnostitcuprija'); ?></a>
+                            <a href="<?php echo esc_url($dog_archive_permalink); ?>" class="btn btn--secondary"><?php echo esc_html__('Clear all filters', 'ravnostitcuprija'); ?></a>
                         </div>
                     </form>
                 </div>

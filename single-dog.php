@@ -2,7 +2,7 @@
 /**
 * Single dog post
 *
-* @package ravnostitcuprija
+* @package Ravnostitcuprija
 */
 
 get_header();

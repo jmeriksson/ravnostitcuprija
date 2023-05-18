@@ -2,7 +2,7 @@
 /**
  * Handles adjustments to the Tiny MCE Editor
  *
- * @package ravnostitcuprija
+ * @package Ravnostitcuprija
  */
 
 class Tiny_Mce_Editor extends Loader {

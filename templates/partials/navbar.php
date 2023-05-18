@@ -2,7 +2,7 @@
 /**
  * Main navbar
  *
- * @package ravnostitcuprija
+ * @package Ravnostitcuprija
  */
 
 ?>

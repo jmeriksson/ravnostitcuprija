@@ -2,7 +2,7 @@
 /**
  * This class handles loading and initialising all classes.
  *
- * @package ravnostitcuprija
+ * @package Ravnostitcuprija
  */
 
 abstract class Loader {

@@ -2,7 +2,7 @@
 /**
 * Template Name: Page with modules
 *
-* @package ravnostitcuprija
+* @package Ravnostitcuprija
 */
 
 get_header();

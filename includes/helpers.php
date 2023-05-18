@@ -2,7 +2,7 @@
 /**
  * Helper functions.
  *
- * @package ravnostitcuprija
+ * @package Ravnostitcuprija
  */
 
 if (!function_exists('ravnostit_calculate_dog_age')) {
