@@ -18,7 +18,7 @@
 			<div class="navigation__desktop-menu" role="menu">
 				<?php
 					$desktop_menu_args = [
-						'menu'             => 'primary',
+						'theme_location'   => 'primary_menu',
 						'echo'             => true,
 						'add_li_class'     => 'nav-item',
 						'add_anchor_class' => 'nav-link',

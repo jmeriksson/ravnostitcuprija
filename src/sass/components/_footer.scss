@@ -56,7 +56,7 @@
         }
     }
 
-    .footer-section--social-media {
+    .footer-section--contact {
         .social-media-wrapper {
             display: flex;
             flex-direction: row;
@@ -66,21 +66,29 @@
             @media (min-width: $breakpoint-lg) {
                 justify-content: flex-start;
             }
+
+            a {
+                text-decoration: none;
+            }
+    
+            a svg path {
+                fill: $white;
+            }
+    
+            a:active,
+            a:hover,
+            a:focus {
+                svg path {
+                    fill: rgba($white, .8);
+                }
+            }
         }
 
-        a {
-            text-decoration: none;
-        }
-
-        a svg path {
-            fill: $white;
-        }
-
-        a:active,
-        a:hover,
-        a:focus {
-            svg path {
-                fill: rgba($white, .8);
+        .social-media-wrapper,
+        .email-wrapper,
+        .phone-wrapper {
+            &:not(:last-child) {
+                margin-bottom: 1rem;
             }
         }
     }

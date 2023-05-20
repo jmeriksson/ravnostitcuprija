@@ -12,7 +12,7 @@ class Theme_Setup extends Loader {
 	 * @return void
 	 */
 	public function init() : void {
-		add_action('init', [ $this, 'register_menus' ]);
+		add_action('after_setup_theme', [ $this, 'register_menus' ]);
 		add_action('after_setup_theme', [ $this, 'theme_supports' ]);
 		add_action('wp_enqueue_scripts', [ $this, 'add_theme_scripts_and_styles' ]);
 		add_action('init', [ $this, 'add_options_page' ]);
@@ -30,7 +30,8 @@ class Theme_Setup extends Loader {
 	public function register_menus() : void {
 		register_nav_menus(
 			[
-				'primary' => __( 'Primary Menu', 'ravnostitcuprija' ),
+				'primary_menu' => __( 'Primary Menu', 'ravnostitcuprija' ),
+                'footer_menu' => __('Footer menu', 'ravnostitcuprija')
 			]
 		);
 	}

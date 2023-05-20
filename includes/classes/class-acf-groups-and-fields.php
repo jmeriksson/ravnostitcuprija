@@ -164,33 +164,51 @@ class ACF_Groups_And_Fields extends Loader {
 								'label' => __('Headline', 'ravnostitcuprija'),
 								'type' => 'text',
 							],
-							[
-								'key' => $prefix . 'footer_flexible_content_navigation_menu',
-								'name' => 'menu',
-								'label' => __('Menu to display', 'ravnostitcuprija'),
-								'type' => 'select',
-								'choices' => [],
-								'multiple' => 0,
-								'default_value' => false,
-								'allow_null' => 0,
-								'ui' => 0,
-								'return_format' => 'value',
-							],
 						] ,
 					],
-					'social_media' => [
-						'key' => $prefix . 'footer_flexible_content_social_media',
-						'name' => 'social_media',
-						'label' => __('Social media', 'ravnostitcuprija'),
+					'contact' => [
+						'key' => $prefix . 'footer_flexible_content_contact',
+						'name' => 'contact',
+						'label' => __('Contact', 'ravnostitcuprija'),
 						'display' => 'block',
 						'sub_fields' => [
 							[
-								'key' => $prefix . 'footer_flexible_content_social_media_headline',
+								'key' => $prefix . 'footer_flexible_content_contact_headline',
 								'name' => 'headline',
 								'label' => __('Headline', 'ravnostitcuprija'),
-								'instructions' => __('Social media links will be fecthed from the ones you have stored in the tab called "General settings"', 'ravnostitcuprija'),
+								'instructions' => __('Social media links, email, and phone number will be fecthed from the values you have stored in the tab called "General settings"', 'ravnostitcuprija'),
 								'type' => 'text',
 							],
+                            [
+                                'key' => $prefix . 'footer_flexible_content_contact_display_social_media',
+                                'name' => 'display_social_media',
+                                'label' => __('Display social media icons?', 'ravnostitcuprija'),
+                                'type' => 'true_false',
+                                'default_value' => 0,
+                                'wrapper' => [
+                                    'width' => 33
+                                ],
+                            ],
+                            [
+                                'key' => $prefix . 'footer_flexible_content_contact_display_email',
+                                'name' => 'display_email',
+                                'label' => __('Display email?', 'ravnostitcuprija'),
+                                'type' => 'true_false',
+                                'default_value' => 0,
+                                'wrapper' => [
+                                    'width' => 33
+                                ],
+                            ],
+                            [
+                                'key' => $prefix . 'footer_flexible_content_contact_display_phone',
+                                'name' => 'display_phone',
+                                'label' => __('Display phone number?', 'ravnostitcuprija'),
+                                'type' => 'true_false',
+                                'default_value' => 0,
+                                'wrapper' => [
+                                    'width' => 34
+                                ],
+                            ],
 						],
 					],
 				],
