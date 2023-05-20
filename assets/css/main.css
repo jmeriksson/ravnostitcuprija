@@ -496,27 +496,32 @@ body.mobile-menu-is-open .navigation .navigation__mobile-menu-toggle .navigation
 .site-footer .footer-section--navigation ul li:not(:last-child) {
   margin-bottom: 1rem;
 }
-.site-footer .footer-section--social-media .social-media-wrapper {
+.site-footer .footer-section--contact .social-media-wrapper {
   display: flex;
   flex-direction: row;
   gap: 1rem;
   justify-content: center;
 }
 @media (min-width: 992px) {
-  .site-footer .footer-section--social-media .social-media-wrapper {
+  .site-footer .footer-section--contact .social-media-wrapper {
     justify-content: flex-start;
   }
 }
-.site-footer .footer-section--social-media a {
+.site-footer .footer-section--contact .social-media-wrapper a {
   text-decoration: none;
 }
-.site-footer .footer-section--social-media a svg path {
+.site-footer .footer-section--contact .social-media-wrapper a svg path {
   fill: #fff;
 }
-.site-footer .footer-section--social-media a:active svg path,
-.site-footer .footer-section--social-media a:hover svg path,
-.site-footer .footer-section--social-media a:focus svg path {
+.site-footer .footer-section--contact .social-media-wrapper a:active svg path,
+.site-footer .footer-section--contact .social-media-wrapper a:hover svg path,
+.site-footer .footer-section--contact .social-media-wrapper a:focus svg path {
   fill: rgba(255, 255, 255, 0.8);
+}
+.site-footer .footer-section--contact .social-media-wrapper:not(:last-child),
+.site-footer .footer-section--contact .email-wrapper:not(:last-child),
+.site-footer .footer-section--contact .phone-wrapper:not(:last-child) {
+  margin-bottom: 1rem;
 }
 
 .mobile-menu {
