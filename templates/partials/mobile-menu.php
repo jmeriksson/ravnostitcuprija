@@ -13,7 +13,7 @@
 	<div class="mobile-menu__off-canvas" id="js-mobile-menu">
 		<?php
 			$mobile_menu_args = [
-				'menu'             => 'primary',
+				'theme_location'   => 'primary_menu',
 				'echo'             => true,
 				'add_li_class'     => 'nav-item',
 				'add_anchor_class' => 'nav-link',

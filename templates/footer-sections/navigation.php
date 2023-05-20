@@ -6,7 +6,6 @@
  */
 
 $headline = $args['headline'] ?? false;
-$menu = $args['menu'] ?? false;
 
 ?>
 
@@ -15,14 +14,12 @@ $menu = $args['menu'] ?? false;
 		<h4><?php echo esc_html($headline); ?></h4>
 	<?php endif; ?>
 	<?php
-	if ( $menu ) {
-		$menu_args = [
-			'menu'             => $menu,
-			'echo'             => true,
-			'add_li_class'     => 'nav-item',
-			'add_anchor_class' => 'nav-link',
-		];
-		wp_nav_menu( $menu_args );
-	}
+    $menu_args = [
+        'theme_location'   => 'footer_menu',
+        'echo'             => true,
+        'add_li_class'     => 'nav-item',
+        'add_anchor_class' => 'nav-link',
+    ];
+    wp_nav_menu( $menu_args );
 	?>
 </section>
