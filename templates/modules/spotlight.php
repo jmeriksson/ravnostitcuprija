@@ -37,12 +37,21 @@ $footer = $args['footer'] ?? false;
                                         'additional_class' => 'swiper-slide'
                                     ]
                                 );
-                            } else {
+                            } elseif ($post_type === 'post') {
                                 get_template_part(
                                     '/templates/partials/card-post',
                                     '',
                                     [
                                         'post_id' => $id,
+                                        'additional_class' => 'swiper-slide'
+                                    ]
+                                );
+                            } else {
+                                get_template_part(
+                                    '/templates/partials/card-page',
+                                    '',
+                                    [
+                                        'page_id' => $id,
                                         'additional_class' => 'swiper-slide'
                                     ]
                                 );
