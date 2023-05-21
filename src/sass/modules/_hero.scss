@@ -3,7 +3,8 @@
         position: relative;
     }
 
-    h1 {
+    h1,
+    h2 {
         margin-top: 1rem;
         margin-bottom: 1rem;
     }
@@ -84,6 +85,12 @@
 
         @media (min-width: $breakpoint-md) {
             height: 40vw;
+        }
+    }
+
+    &:last-child {
+        @media (min-width: $breakpoint-md) {
+            margin-bottom: 0;
         }
     }
 }

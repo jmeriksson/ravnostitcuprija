@@ -777,7 +777,8 @@ body.mobile-menu-is-open .mobile-menu {
 .module-section--hero-module .hero {
   position: relative;
 }
-.module-section--hero-module h1 {
+.module-section--hero-module h1,
+.module-section--hero-module h2 {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
@@ -855,6 +856,11 @@ body.mobile-menu-is-open .mobile-menu {
   .module-section--hero-module .hero--small figure.hero__mobile-background,
 .module-section--hero-module .hero--small figure.hero__mobile-background img {
     height: 40vw;
+  }
+}
+@media (min-width: 768px) {
+  .module-section--hero-module:last-child {
+    margin-bottom: 0;
   }
 }
 
