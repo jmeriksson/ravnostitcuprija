@@ -496,6 +496,22 @@ class ACF_Groups_And_Fields extends Loader {
 						'min' => '',
 						'max' => '',
 					],
+                    'excerpt' => [
+                        'key' => $prefix . 'excerpt',
+                        'name' => 'excerpt',
+                        'label' => __('Excerpt', 'ravnostitcuprija'),
+                        'display' => 'block',
+                        'sub_fields' => [
+                            [
+                                'key' => $prefix . 'excerpt_content',
+                                'name' => 'content',
+                                'label' => __('Content', 'ravnostitcuprija'),
+                                'instructions' => __('This field will not be displayed on the page, it is only used as an excerpt.', 'ravnostitcuprija'),
+                                'type' => 'textarea',
+                                'new_lines' => 'br'
+                            ],
+                        ],
+                    ],
 					'icon_row' => [
 						'key' => $prefix . 'icon_row',
 						'name' => 'icon_row',
@@ -831,7 +847,7 @@ class ACF_Groups_And_Fields extends Loader {
                                 'name' => 'select_posts',
                                 'label' => __('Posts in the spotlight', 'ravnostitcuprija'),
                                 'type' => 'relationship',
-								'post_type' => ['post', 'dog'],
+								'post_type' => ['post', 'dog', 'page'],
 								'filters' => ['search', 'taxonomy'],
 								'min' => 1,
 								'max' => 0,
@@ -979,7 +995,6 @@ class ACF_Groups_And_Fields extends Loader {
 			],
 			'hide_on_screen' => [
 				'the_content',
-				'featured_image',
 			],
 			'active' => true,
 		];
