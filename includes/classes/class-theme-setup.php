@@ -20,6 +20,7 @@ class Theme_Setup extends Loader {
 		add_action('init', [ $this, 'register_image_sizes' ]);
         add_action('init', [ $this, 'add_editor_styles']);
         add_filter('admin_post_thumbnail_html', [ $this, 'add_featured_image_instructions' ], 10, 2 );
+        add_filter('post_thumbnail_id', [ $this, 'add_hero_image_as_thumbnail'], 10, 2);
 	}
 
 	/**
@@ -121,5 +122,39 @@ class Theme_Setup extends Loader {
         }
 
         return $content;
+    }
+
+    /**
+     * Returning hero background image as thumbnail image for pages.
+     *
+     * @param integer|false $thumbnail_id
+     * @param integer|WP_Post|null $post
+     * @return integer
+     */
+    public function add_hero_image_as_thumbnail( int|false $thumbnail_id, int|WP_Post|null $post ) : int {
+        // We only want to add a backup if post is of type "page" and there is no thumbnail set.
+        if ($thumbnail_id || get_post_type($post) !== "page" || !$post ) {
+            return $thumbnail_id;
+        }
+
+        $post_id = $post instanceof WP_Post ? $post->ID : $post;
+
+        $page_modules = get_field('modules', $post_id) ?? false;
+
+        if ( ! $page_modules ) {
+            return $thumbnail_id;
+        }
+        
+        foreach($page_modules as $page_module) {
+            if ($page_module['acf_fc_layout'] === 'hero') {
+                if ($page_module['background_image']) {
+                    return $page_module['background_image'];
+                }
+            }
+        }
+        
+        return $thumbnail_id;
+
+        // $hero_image_id = get_field('')
     }
 }
