@@ -13,6 +13,7 @@ class Post_Type_FAQ extends Loader {
 	 */
 	public function init() : void {
 		add_action( 'init', [ $this, 'register_post_type' ] );
+        add_action( 'post_thumbnail_id', [ $this, 'add_post_thumbnail_backup' ], 10, 2 );
 	}
 
 	/**
@@ -61,10 +62,32 @@ class Post_Type_FAQ extends Loader {
 			'show_in_rest'      => true,
 			'menu_position'     => 10,
 			'menu_icon'         => 'dashicons-format-chat',
-			'supports'          => [ 'title', 'editor' ],
+			'supports'          => [ 'title', 'editor', 'thumbnail' ],
 			'has_archive'       => false,
 			'delete_with_user'  => false,
 		];
 		register_post_type( 'faq', $args );
 	}
+
+    /**
+     * Adds a backup image as a post thumbnail for FAQ posts, if none is set
+     *
+     * @param integer|false $thumbnail_id
+     * @param integer|WP_Post|null $post
+     * @return integer
+     */
+    public function add_post_thumbnail_backup( int|false $thumbnail_id, int|WP_Post|null $post) : int {
+        // We only want to add a backup if post is of type "faq" and there is no thumbnail set.
+        if ($thumbnail_id || get_post_type($post) !== "faq") {
+            return $thumbnail_id;
+        }
+
+        $backup_thumbnail = get_field('faq_image', 'options') ?? false;
+
+        if ($backup_thumbnail) {
+            return $backup_thumbnail;
+        }
+
+        return $thumbnail_id;
+    }
 }
