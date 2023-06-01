@@ -1072,7 +1072,7 @@ body.mobile-menu-is-open .mobile-menu {
   flex: 1;
 }
 .module-section--icon-row-module .icons .icon .image {
-  height: 110px;
+  height: 165px;
   display: flex;
   flex-direction: column;
   align-items: center;
