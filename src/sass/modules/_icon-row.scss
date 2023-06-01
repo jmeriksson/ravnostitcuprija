@@ -26,10 +26,10 @@
 		align-items: center;
 		color: $blue-1;
 
-		svg {
+		svg,
+		a {
 			height: 100%;
 			width: auto;
-			fill: currentColor;
 		}
 	}
 

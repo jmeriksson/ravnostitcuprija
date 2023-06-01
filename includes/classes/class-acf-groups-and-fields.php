@@ -518,6 +518,23 @@ class ACF_Groups_And_Fields extends Loader {
 						'label' => __('Icon row', 'ravnostitcuprija'),
 						'display' => 'block',
 						'sub_fields' => [
+                            [
+                                'key' => $prefix . 'icon_row_icon_style',
+                                'name' => 'icon_style',
+                                'label' => __('Icon style', 'ravnostitcuprija'),
+                                'type' => 'select',
+                                'choices' => [
+                                    'transparent' => __('Transparent background', 'ravnostitcuprija'),
+                                    'squared' => __('Square background', 'ravnostitcuprija'),
+                                    'round' => __('Round background', 'ravnostitcuprija'),
+                                ],
+                                'default_value' => 'transparent',
+                                'allow_null' => 0,
+                                'multiple' => 0,
+                                'ui' => 0,
+                                'return_format' => 'value',
+                                'required' => 1
+                            ],
 							[
 								'key' => $prefix . 'icon_row_icons',
 								'name' => 'icons',
@@ -534,12 +551,12 @@ class ACF_Groups_And_Fields extends Loader {
 										'label' => __('Icon', 'ravnostitcuprija'),
 										'type' => 'select',
 										'wrapper' => [
-											'width' => '30',
+											'width' => '20',
 										],
 										'choices' => [
 											'dog' => __('Dog', 'ravnostitcuprija'),
-											'chat' => __('Chat bubbles', 'ravnostitcuprija'),
-											'house' => __('House', 'ravnostitcuprija'),
+											'dog-and-person' => __('Dog with person', 'ravnostitcuprija'),
+											'dog-and-house' => __('Dog in house', 'ravnostitcuprija'),
 										],
 										'default_value' => 'dog',
 										'allow_null' => 0,
@@ -554,11 +571,20 @@ class ACF_Groups_And_Fields extends Loader {
 										'label' => __('Text content', 'ravnostitcuprija'),
 										'type' => 'textarea',
 										'wrapper' => [
-											'width' => '70',
+											'width' => '60',
 										],
 										'rows' => 4,
 										'new_lines' => 'br',
 									],
+                                    [
+                                        'key' => $prefix . 'icon_row_icons_link',
+                                        'name' => 'link',
+                                        'label' => __('Link', 'ravnostitcuprija'),
+                                        'type' => 'link',
+                                        'wrapper' => [
+											'width' => '20',
+										]
+                                    ]
 								],
 							],
 						],

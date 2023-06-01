@@ -1078,10 +1078,10 @@ body.mobile-menu-is-open .mobile-menu {
   align-items: center;
   color: #0c2f39;
 }
-.module-section--icon-row-module .icons .icon .image svg {
+.module-section--icon-row-module .icons .icon .image svg,
+.module-section--icon-row-module .icons .icon .image a {
   height: 100%;
   width: auto;
-  fill: currentColor;
 }
 .module-section--icon-row-module .icons .icon .content {
   text-align: center;
