@@ -721,6 +721,9 @@ class ACF_Groups_And_Fields extends Loader {
                                 'type' => 'image',
                                 'return_format' => 'id',
                                 'preview_size' => 'medium',
+                                'wrapper' => [
+                                    'width' => 50
+                                ]
                             ],
                             [
                                 'key' => $prefix . 'text_and_image_image_position',
@@ -732,7 +735,17 @@ class ACF_Groups_And_Fields extends Loader {
                                     'right' => __('Right', 'ravnostitcuprija'),
                                 ],
                                 'default_value' => 'left',
-                                'allow_null' => 0
+                                'allow_null' => 0,
+                                'wrapper' => [
+                                    'width' => 50
+                                ]
+                            ],
+                            [
+                                'key' => $prefix . 'text_and_image_cta_button',
+                                'name' => 'cta_button',
+                                'label' => __('CTA button', 'ravnostitcuprija'),
+                                'type' => 'link',
+                                'return_format' => 'array'
                             ]
                         ]
                     ],

@@ -95,13 +95,13 @@ p, li, caption {
 }
 
 h1, .h1 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   line-height: 1.25;
   margin-bottom: 1rem;
 }
 @media (min-width: 768px) {
   h1, .h1 {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
   }
 }
 @media (min-width: 992px) {
@@ -1028,7 +1028,7 @@ body.mobile-menu-is-open .mobile-menu {
   flex-direction: column;
   align-items: center;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .module-section--text-and-image-module .text-and-image-wrapper {
     flex-direction: row;
     align-items: center;
@@ -1037,7 +1037,7 @@ body.mobile-menu-is-open .mobile-menu {
     flex-direction: row-reverse;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .module-section--text-and-image-module .image-wrapper {
     flex: 50%;
     align-self: flex-start;
@@ -1048,9 +1048,21 @@ body.mobile-menu-is-open .mobile-menu {
   height: auto;
   border-radius: 8px;
 }
-@media (min-width: 992px) {
+.module-section--text-and-image-module .content-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
   .module-section--text-and-image-module .content-wrapper {
     flex: 50%;
+  }
+}
+.module-section--text-and-image-module .content-wrapper .btn, .module-section--text-and-image-module .content-wrapper .nf-form-cont .nf-field-element input[type=submit], .nf-form-cont .nf-field-element .module-section--text-and-image-module .content-wrapper input[type=submit] {
+  align-self: center;
+}
+@media (min-width: 768px) {
+  .module-section--text-and-image-module .content-wrapper .btn, .module-section--text-and-image-module .content-wrapper .nf-form-cont .nf-field-element input[type=submit], .nf-form-cont .nf-field-element .module-section--text-and-image-module .content-wrapper input[type=submit] {
+    align-self: flex-start;
   }
 }
 

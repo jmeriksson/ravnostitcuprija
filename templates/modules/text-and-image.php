@@ -8,6 +8,7 @@
 $content = $args['content'] ?? false;
 $image = $args['image'] ?? false;
 $image_position = $args['image_position'] ?? "left";
+$cta_button = $args['cta_button'] ?? false;
 
 if (! $content) {
     return;
@@ -28,6 +29,14 @@ if (! $content) {
                 <?php if (isset($content) && ! empty($content)) : ?>
                 <div class="content-wrapper">
                     <?php echo wp_kses_post($content); ?>
+                    <?php if ($cta_button) : ?>
+                        <a
+                        class="btn btn--primary"
+                        href="<?php echo esc_url($cta_button['url']); ?>"
+                        target=<?php echo esc_attr($cta_button['target']); ?>>
+                            <?php echo esc_html($cta_button['title']); ?>
+                        </a>
+                    <?php endif; ?>
                 </div>
                 <?php endif; ?>
             </div>
