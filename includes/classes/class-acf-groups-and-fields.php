@@ -14,7 +14,6 @@ class ACF_Groups_And_Fields extends Loader {
 	public function init() : void {
 		add_action( 'acf/init', [ $this, 'register_acf_groups' ] );
 		add_filter( 'acf/load_field/key=global_settings_field_footer_flexible_content_navigation_menu', [ $this, 'add_all_wp_nav_menus_as_choices_to_field' ]);
-		add_filter( 'acf/load_field/key=global_settings_field_dog_adoption_page_form', [ $this, 'add_all_ninja_forms_as_choices_to_field']);
 	}
 
 	/**
@@ -246,16 +245,11 @@ class ACF_Groups_And_Fields extends Loader {
 				'media_upload' => 0,
 			],
 			[
-				'key' => $prefix . 'dog_adoption_page_form',
-				'name' => 'dog_adoption_page_form',
-				'label' => __('Dog adoption form', 'ravnostitcuprija'),
-				'type' => 'select',
-				'choices' => [],
-				'multiple' => 0,
-				'default_value' => false,
+				'key' => $prefix . 'dog_adoption_page_form_cf7',
+				'name' => 'dog_adoption_page_form_cf7',
+				'label' => __('Dog adoption form shortcode', 'ravnostitcuprija'),
+				'type' => 'text',
 				'allow_null' => 0,
-				'ui' => 0,
-				'return_format' => 'value',
 			],
             [
 				'key' => $prefix . 'dog_adoption_reserved_dog_information',
@@ -374,19 +368,6 @@ class ACF_Groups_And_Fields extends Loader {
 	public static function add_all_wp_nav_menus_as_choices_to_field( $field ) : array {
 		$all_wp_nav_menus = get_registered_nav_menus();
 		$field['choices'] = $all_wp_nav_menus;
-		return $field;
-	}
-
-	public static function add_all_ninja_forms_as_choices_to_field( $field ) : array {
-		if ( ! function_exists('Ninja_Forms') ) {
-			return $field;
-		}
-		$forms = Ninja_Forms()->form()->get_forms();
-		$constructed_form_array = [];
-		foreach($forms as $form) {
-			$constructed_form_array[$form->get_id()] = $form->get_setting('title');
-		}
-		$field['choices'] = $constructed_form_array;
 		return $field;
 	}
 
@@ -721,6 +702,9 @@ class ACF_Groups_And_Fields extends Loader {
                                 'type' => 'image',
                                 'return_format' => 'id',
                                 'preview_size' => 'medium',
+                                'wrapper' => [
+                                    'width' => 50
+                                ]
                             ],
                             [
                                 'key' => $prefix . 'text_and_image_image_position',
@@ -732,7 +716,17 @@ class ACF_Groups_And_Fields extends Loader {
                                     'right' => __('Right', 'ravnostitcuprija'),
                                 ],
                                 'default_value' => 'left',
-                                'allow_null' => 0
+                                'allow_null' => 0,
+                                'wrapper' => [
+                                    'width' => 50
+                                ]
+                            ],
+                            [
+                                'key' => $prefix . 'text_and_image_cta_button',
+                                'name' => 'cta_button',
+                                'label' => __('CTA button', 'ravnostitcuprija'),
+                                'type' => 'link',
+                                'return_format' => 'array'
                             ]
                         ]
                     ],

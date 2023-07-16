@@ -6,7 +6,7 @@
 
 		@extend .standard-flex-gap;
 		
-		@media (min-width: $breakpoint-lg) {
+		@media (min-width: $breakpoint-md) {
 			flex-direction: row;
 			align-items: center;
 
@@ -17,7 +17,7 @@
 	}
 
 	.image-wrapper {
-		@media (min-width: $breakpoint-lg) {
+		@media (min-width: $breakpoint-md) {
 			flex: 50%;
 			align-self: flex-start;
 		}
@@ -30,8 +30,20 @@
 	}
 
 	.content-wrapper {
-		@media (min-width: $breakpoint-lg) {
+		display: flex;
+		flex-direction: column;
+
+		@media (min-width: $breakpoint-md) {
 			flex: 50%;
 		}
 	}
+
+	.content-wrapper .btn {
+		align-self: center;
+
+		@media (min-width: $breakpoint-md) {
+			align-self: flex-start;
+		}
+	}
+
 }

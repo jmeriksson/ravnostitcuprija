@@ -138,6 +138,45 @@
 		@media (min-width: $breakpoint-lg) {
 			flex: 1 1 calculate-col(7)
 		}
+
+		// Contact Form 7
+		.wpcf7 {
+			label {
+				font-size: 12px;
+			}
+
+			.wpcf7-form-control:not([type="submit"]) {
+				width: calc(100% - 24px);
+				padding: 12px;
+				font-size: 18px;
+				color: $blue-1;
+			}
+
+			label .wpcf7-form-control {
+				margin-top: 8px;
+			}
+
+			.wpcf7-form-control[type="submit"] {
+				border: none;
+				@extend .btn, .btn--primary
+			}
+
+			.wpcf7-response-output {
+				margin: 1rem 0;
+			}
+
+			.wpcf7-form.sent *:not(.wpcf7-response-output) {
+				display: none;
+			}
+
+			.wpcf7-form.sent .wpcf7-response-output {
+				border: none;
+				padding: 0;
+				margin: 1rem 0;
+				color: $blue-1;
+				font-style: italic;
+			}
+		}
 	}
 
 	.reserved-wrapper {

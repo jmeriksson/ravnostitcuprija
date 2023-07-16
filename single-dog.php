@@ -26,6 +26,7 @@ $additional_photos = get_field('additional_photos') ?? false;
 $general_dog_page_headline = get_field('dog_adoption_page_headline', 'options') ?? false;
 $dog_adoption_page_content = get_field('dog_adoption_page_content', 'options') ?? false;
 $dog_adoption_page_form = get_field('dog_adoption_page_form', 'options') ?? false;
+$dog_adoption_page_form_shortcode = get_field('dog_adoption_page_form_cf7', 'options') ?? false;
 $dog_archive_permalink = get_post_type_archive_link('dog');
 $reserved = get_field('reserved') ?? false;
 $reserved_headline = get_field('dog_adoption_reserved_dog_headline', 'options') ?? false;
@@ -119,9 +120,9 @@ $reserved_text_content = get_field('dog_adoption_reserved_dog_content', 'options
                                 <?php echo wp_kses_post(str_replace('%DOGNAME%', get_the_title(), $dog_adoption_page_content)); ?>
                             </div>
                         <?php endif; ?>
-                        <?php if ($dog_adoption_page_form && function_exists('Ninja_Forms')) : ?>
+                        <?php if ($dog_adoption_page_form_shortcode) : ?>
                             <div class="single-dog-post-adoption-form">
-                                <?php Ninja_Forms()->display($dog_adoption_page_form); ?>
+                                <?php echo do_shortcode($dog_adoption_page_form_shortcode); ?>
                             </div>
                         <?php endif; ?>
                     </div>
