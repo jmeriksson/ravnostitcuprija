@@ -602,7 +602,7 @@ body.mobile-menu-is-open .mobile-menu {
   visibility: visible;
 }
 
-.btn, .nf-form-cont .nf-field-element input[type=submit] {
+.btn, .single-dog .single-dog-post-adoption-form .wpcf7 .wpcf7-form-control[type=submit], .module-section--form-module .wpcf7 .wpcf7-form-control[type=submit], .nf-form-cont .nf-field-element input[type=submit] {
   padding: 0.5rem 2rem;
   display: inline-block;
   text-decoration: none;
@@ -610,12 +610,12 @@ body.mobile-menu-is-open .mobile-menu {
   font-size: 1rem;
 }
 
-.btn--primary, .nf-form-cont .nf-field-element input[type=submit] {
+.btn--primary, .single-dog .single-dog-post-adoption-form .wpcf7 .wpcf7-form-control[type=submit], .module-section--form-module .wpcf7 .wpcf7-form-control[type=submit], .nf-form-cont .nf-field-element input[type=submit] {
   background-color: #ffbb09;
   color: #fff;
   transition: all ease-in-out 150ms;
 }
-.btn--primary:hover, .nf-form-cont .nf-field-element input[type=submit]:hover, .btn--primary:active, .nf-form-cont .nf-field-element input[type=submit]:active, .btn--primary:focus, .nf-form-cont .nf-field-element input[type=submit]:focus {
+.btn--primary:hover, .single-dog .single-dog-post-adoption-form .wpcf7 .wpcf7-form-control[type=submit]:hover, .module-section--form-module .wpcf7 .wpcf7-form-control[type=submit]:hover, .nf-form-cont .nf-field-element input[type=submit]:hover, .btn--primary:active, .single-dog .single-dog-post-adoption-form .wpcf7 .wpcf7-form-control[type=submit]:active, .module-section--form-module .wpcf7 .wpcf7-form-control[type=submit]:active, .nf-form-cont .nf-field-element input[type=submit]:active, .btn--primary:focus, .single-dog .single-dog-post-adoption-form .wpcf7 .wpcf7-form-control[type=submit]:focus, .module-section--form-module .wpcf7 .wpcf7-form-control[type=submit]:focus, .nf-form-cont .nf-field-element input[type=submit]:focus {
   background-color: #ffc93c;
   color: #fff;
 }
@@ -895,17 +895,17 @@ body.mobile-menu-is-open .mobile-menu {
   flex-direction: column;
   align-items: flex-start;
 }
-.module-section--featured-post-module .featured-post__content .btn, .module-section--featured-post-module .featured-post__content .nf-form-cont .nf-field-element input[type=submit], .nf-form-cont .nf-field-element .module-section--featured-post-module .featured-post__content input[type=submit] {
+.module-section--featured-post-module .featured-post__content .btn, .module-section--featured-post-module .featured-post__content .single-dog .single-dog-post-adoption-form .wpcf7 .wpcf7-form-control[type=submit], .single-dog .single-dog-post-adoption-form .wpcf7 .module-section--featured-post-module .featured-post__content .wpcf7-form-control[type=submit], .module-section--featured-post-module .featured-post__content .module-section--form-module .wpcf7 .wpcf7-form-control[type=submit], .module-section--form-module .wpcf7 .module-section--featured-post-module .featured-post__content .wpcf7-form-control[type=submit], .module-section--featured-post-module .featured-post__content .nf-form-cont .nf-field-element input[type=submit], .nf-form-cont .nf-field-element .module-section--featured-post-module .featured-post__content input[type=submit] {
   align-self: center;
   margin-top: 0.5rem;
 }
 @media (min-width: 768px) {
-  .module-section--featured-post-module .featured-post__content .btn, .module-section--featured-post-module .featured-post__content .nf-form-cont .nf-field-element input[type=submit], .nf-form-cont .nf-field-element .module-section--featured-post-module .featured-post__content input[type=submit] {
+  .module-section--featured-post-module .featured-post__content .btn, .module-section--featured-post-module .featured-post__content .single-dog .single-dog-post-adoption-form .wpcf7 .wpcf7-form-control[type=submit], .single-dog .single-dog-post-adoption-form .wpcf7 .module-section--featured-post-module .featured-post__content .wpcf7-form-control[type=submit], .module-section--featured-post-module .featured-post__content .module-section--form-module .wpcf7 .wpcf7-form-control[type=submit], .module-section--form-module .wpcf7 .module-section--featured-post-module .featured-post__content .wpcf7-form-control[type=submit], .module-section--featured-post-module .featured-post__content .nf-form-cont .nf-field-element input[type=submit], .nf-form-cont .nf-field-element .module-section--featured-post-module .featured-post__content input[type=submit] {
     align-self: flex-start;
   }
 }
 @media (min-width: 992px) {
-  .module-section--featured-post-module .featured-post__content .btn, .module-section--featured-post-module .featured-post__content .nf-form-cont .nf-field-element input[type=submit], .nf-form-cont .nf-field-element .module-section--featured-post-module .featured-post__content input[type=submit] {
+  .module-section--featured-post-module .featured-post__content .btn, .module-section--featured-post-module .featured-post__content .single-dog .single-dog-post-adoption-form .wpcf7 .wpcf7-form-control[type=submit], .single-dog .single-dog-post-adoption-form .wpcf7 .module-section--featured-post-module .featured-post__content .wpcf7-form-control[type=submit], .module-section--featured-post-module .featured-post__content .module-section--form-module .wpcf7 .wpcf7-form-control[type=submit], .module-section--form-module .wpcf7 .module-section--featured-post-module .featured-post__content .wpcf7-form-control[type=submit], .module-section--featured-post-module .featured-post__content .nf-form-cont .nf-field-element input[type=submit], .nf-form-cont .nf-field-element .module-section--featured-post-module .featured-post__content input[type=submit] {
     margin-top: 1rem;
   }
 }
@@ -1057,11 +1057,11 @@ body.mobile-menu-is-open .mobile-menu {
     flex: 50%;
   }
 }
-.module-section--text-and-image-module .content-wrapper .btn, .module-section--text-and-image-module .content-wrapper .nf-form-cont .nf-field-element input[type=submit], .nf-form-cont .nf-field-element .module-section--text-and-image-module .content-wrapper input[type=submit] {
+.module-section--text-and-image-module .content-wrapper .btn, .module-section--text-and-image-module .content-wrapper .single-dog .single-dog-post-adoption-form .wpcf7 .wpcf7-form-control[type=submit], .single-dog .single-dog-post-adoption-form .wpcf7 .module-section--text-and-image-module .content-wrapper .wpcf7-form-control[type=submit], .module-section--text-and-image-module .content-wrapper .module-section--form-module .wpcf7 .wpcf7-form-control[type=submit], .module-section--form-module .wpcf7 .module-section--text-and-image-module .content-wrapper .wpcf7-form-control[type=submit], .module-section--text-and-image-module .content-wrapper .nf-form-cont .nf-field-element input[type=submit], .nf-form-cont .nf-field-element .module-section--text-and-image-module .content-wrapper input[type=submit] {
   align-self: center;
 }
 @media (min-width: 768px) {
-  .module-section--text-and-image-module .content-wrapper .btn, .module-section--text-and-image-module .content-wrapper .nf-form-cont .nf-field-element input[type=submit], .nf-form-cont .nf-field-element .module-section--text-and-image-module .content-wrapper input[type=submit] {
+  .module-section--text-and-image-module .content-wrapper .btn, .module-section--text-and-image-module .content-wrapper .single-dog .single-dog-post-adoption-form .wpcf7 .wpcf7-form-control[type=submit], .single-dog .single-dog-post-adoption-form .wpcf7 .module-section--text-and-image-module .content-wrapper .wpcf7-form-control[type=submit], .module-section--text-and-image-module .content-wrapper .module-section--form-module .wpcf7 .wpcf7-form-control[type=submit], .module-section--form-module .wpcf7 .module-section--text-and-image-module .content-wrapper .wpcf7-form-control[type=submit], .module-section--text-and-image-module .content-wrapper .nf-form-cont .nf-field-element input[type=submit], .nf-form-cont .nf-field-element .module-section--text-and-image-module .content-wrapper input[type=submit] {
     align-self: flex-start;
   }
 }
@@ -1154,6 +1154,34 @@ body.mobile-menu-is-open .mobile-menu {
 }
 .module-section--form-module .form-wrapper .form .nf-form-title {
   display: none;
+}
+.module-section--form-module .wpcf7 label {
+  font-size: 12px;
+}
+.module-section--form-module .wpcf7 .wpcf7-form-control:not([type=submit]) {
+  width: calc(100% - 24px);
+  padding: 12px;
+  font-size: 18px;
+  color: #0c2f39;
+}
+.module-section--form-module .wpcf7 label .wpcf7-form-control {
+  margin-top: 8px;
+}
+.module-section--form-module .wpcf7 .wpcf7-form-control[type=submit] {
+  border: none;
+}
+.module-section--form-module .wpcf7 .wpcf7-response-output {
+  margin: 1rem 0;
+}
+.module-section--form-module .wpcf7 .wpcf7-form.sent *:not(.wpcf7-response-output) {
+  display: none;
+}
+.module-section--form-module .wpcf7 .wpcf7-form.sent .wpcf7-response-output {
+  border: none;
+  padding: 0;
+  margin: 1rem 0;
+  color: #0c2f39;
+  font-style: italic;
 }
 
 .single-post .single-post__hero figure {
@@ -1292,6 +1320,34 @@ body.mobile-menu-is-open .mobile-menu {
     flex: 1 1 58.3333333333%;
   }
 }
+.single-dog .single-dog-post-adoption-form .wpcf7 label {
+  font-size: 12px;
+}
+.single-dog .single-dog-post-adoption-form .wpcf7 .wpcf7-form-control:not([type=submit]) {
+  width: calc(100% - 24px);
+  padding: 12px;
+  font-size: 18px;
+  color: #0c2f39;
+}
+.single-dog .single-dog-post-adoption-form .wpcf7 label .wpcf7-form-control {
+  margin-top: 8px;
+}
+.single-dog .single-dog-post-adoption-form .wpcf7 .wpcf7-form-control[type=submit] {
+  border: none;
+}
+.single-dog .single-dog-post-adoption-form .wpcf7 .wpcf7-response-output {
+  margin: 1rem 0;
+}
+.single-dog .single-dog-post-adoption-form .wpcf7 .wpcf7-form.sent *:not(.wpcf7-response-output) {
+  display: none;
+}
+.single-dog .single-dog-post-adoption-form .wpcf7 .wpcf7-form.sent .wpcf7-response-output {
+  border: none;
+  padding: 0;
+  margin: 1rem 0;
+  color: #0c2f39;
+  font-style: italic;
+}
 .single-dog .reserved-wrapper {
   display: flex;
   flex-direction: column;
@@ -1317,12 +1373,12 @@ body.post-type-archive-dog .filtering {
   flex-direction: column;
   align-items: center;
 }
-body.post-type-archive-dog .filtering .btn, body.post-type-archive-dog .filtering .nf-form-cont .nf-field-element input[type=submit], .nf-form-cont .nf-field-element body.post-type-archive-dog .filtering input[type=submit] {
+body.post-type-archive-dog .filtering .btn, body.post-type-archive-dog .filtering .nf-form-cont .nf-field-element input[type=submit], .nf-form-cont .nf-field-element body.post-type-archive-dog .filtering input[type=submit], body.post-type-archive-dog .filtering .module-section--form-module .wpcf7 .wpcf7-form-control[type=submit], .module-section--form-module .wpcf7 body.post-type-archive-dog .filtering .wpcf7-form-control[type=submit], body.post-type-archive-dog .filtering .single-dog .single-dog-post-adoption-form .wpcf7 .wpcf7-form-control[type=submit], .single-dog .single-dog-post-adoption-form .wpcf7 body.post-type-archive-dog .filtering .wpcf7-form-control[type=submit] {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-body.post-type-archive-dog .filtering .btn svg, body.post-type-archive-dog .filtering .nf-form-cont .nf-field-element input[type=submit] svg, .nf-form-cont .nf-field-element body.post-type-archive-dog .filtering input[type=submit] svg {
+body.post-type-archive-dog .filtering .btn svg, body.post-type-archive-dog .filtering .nf-form-cont .nf-field-element input[type=submit] svg, .nf-form-cont .nf-field-element body.post-type-archive-dog .filtering input[type=submit] svg, body.post-type-archive-dog .filtering .module-section--form-module .wpcf7 .wpcf7-form-control[type=submit] svg, .module-section--form-module .wpcf7 body.post-type-archive-dog .filtering .wpcf7-form-control[type=submit] svg, body.post-type-archive-dog .filtering .single-dog .single-dog-post-adoption-form .wpcf7 .wpcf7-form-control[type=submit] svg, .single-dog .single-dog-post-adoption-form .wpcf7 body.post-type-archive-dog .filtering .wpcf7-form-control[type=submit] svg {
   margin-left: 1rem;
 }
 body.post-type-archive-dog .filtering .filtering-form-wrapper {
