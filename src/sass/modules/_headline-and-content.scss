@@ -9,9 +9,19 @@
 			align-items: flex-start;
 		}
 
+		.headline {
+			@media (min-width: $breakpoint-lg) {
+				flex: 40%;
+			}
+		}
+
 		.content {
 			p:first-child {
 				margin-top: 0;
+			}
+
+			@media (min-width: $breakpoint-lg) {
+				flex: 60%;
 			}
 		}
 	}
