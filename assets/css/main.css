@@ -1128,8 +1128,18 @@ body.mobile-menu-is-open .mobile-menu {
     align-items: flex-start;
   }
 }
+@media (min-width: 992px) {
+  .module-section--headline-and-content-module .headline-and-content .headline {
+    flex: 40%;
+  }
+}
 .module-section--headline-and-content-module .headline-and-content .content p:first-child {
   margin-top: 0;
+}
+@media (min-width: 992px) {
+  .module-section--headline-and-content-module .headline-and-content .content {
+    flex: 60%;
+  }
 }
 
 .module-section--form-module .form-wrapper {
