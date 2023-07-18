@@ -6,6 +6,9 @@
 */
 
 get_header();
+global $post;
+$author_id = $post->post_author;
+$author = get_the_author_meta('display_name', $author_id);
 ?>
 
 <main class="main">
@@ -20,7 +23,9 @@ get_header();
         <div class="single-post__content entry-content">
             <div class="container container--narrow">
                 <h1><?php echo the_title(); ?></h1>
-                <p><span><?php echo get_the_date(); ?></span></p>
+                <?php if (isset($author) && !empty($author)) : ?>
+                    <p><small><?php echo esc_html__('by', 'ravnostitcuprija') . ' ' . esc_html($author); ?></small></p>
+                <?php endif; ?>
                 <?php the_content(); ?>
             </div>
         </div>

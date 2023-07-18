@@ -63,15 +63,13 @@
 
     .hero__buttons {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
         align-items: center;
         gap: 1rem;
 
         @media (min-width: $breakpoint-md) {
-            flex-direction: row;
-            justify-content: center;
-            gap: 0;
-
             .btn--secondary {
                 color: $white;
             }

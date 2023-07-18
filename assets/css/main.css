@@ -834,16 +834,13 @@ body.mobile-menu-is-open .mobile-menu {
 }
 .module-section--hero-module .hero__buttons {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
   gap: 1rem;
 }
 @media (min-width: 768px) {
-  .module-section--hero-module .hero__buttons {
-    flex-direction: row;
-    justify-content: center;
-    gap: 0;
-  }
   .module-section--hero-module .hero__buttons .btn--secondary {
     color: #fff;
   }
