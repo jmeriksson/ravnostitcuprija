@@ -35,9 +35,6 @@ $secondary_button   = $args['secondary_button'] ?? false;
                     }
                 }
                 ?>
-                <?php if ($text_content) : ?>
-                    <p><?php echo wp_kses_post($text_content); ?></p>
-                <?php endif; ?>
                 <?php if ($primary_button || $secondary_button) : ?>
                     <div class="hero__buttons">
                     <?php endif; ?>
@@ -51,7 +48,7 @@ $secondary_button   = $args['secondary_button'] ?? false;
                     <?php endif; ?>
                     <?php if ($secondary_button) : ?>
                         <a
-                        class="btn btn--secondary"
+                        class="btn btn--tertiary"
                         href="<?php echo esc_attr($secondary_button['url']); ?>"
                         target="<?php echo esc_attr($secondary_button['target']) ?>">
                             <?php echo esc_html( $secondary_button['title'] ); ?>

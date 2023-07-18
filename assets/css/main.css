@@ -608,21 +608,35 @@ body.mobile-menu-is-open .mobile-menu {
   text-decoration: none;
   cursor: pointer;
   font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 1.5px;
 }
 
 .btn--primary, .single-dog .single-dog-post-adoption-form .wpcf7 .wpcf7-form-control[type=submit], .module-section--form-module .wpcf7 .wpcf7-form-control[type=submit], .nf-form-cont .nf-field-element input[type=submit] {
   background-color: #ffbb09;
   color: #fff;
   transition: all ease-in-out 150ms;
+  border: 1px solid #ffbb09;
 }
 .btn--primary:hover, .single-dog .single-dog-post-adoption-form .wpcf7 .wpcf7-form-control[type=submit]:hover, .module-section--form-module .wpcf7 .wpcf7-form-control[type=submit]:hover, .nf-form-cont .nf-field-element input[type=submit]:hover, .btn--primary:active, .single-dog .single-dog-post-adoption-form .wpcf7 .wpcf7-form-control[type=submit]:active, .module-section--form-module .wpcf7 .wpcf7-form-control[type=submit]:active, .nf-form-cont .nf-field-element input[type=submit]:active, .btn--primary:focus, .single-dog .single-dog-post-adoption-form .wpcf7 .wpcf7-form-control[type=submit]:focus, .module-section--form-module .wpcf7 .wpcf7-form-control[type=submit]:focus, .nf-form-cont .nf-field-element input[type=submit]:focus {
   background-color: #ffc93c;
   color: #fff;
+  border-color: #ffc93c;
 }
 
 .btn--secondary {
   text-decoration: underline;
   color: #1e758d;
+}
+
+.btn--tertiary {
+  background-color: transparent;
+  border: 1px solid #155263;
+  color: #155263;
+}
+.btn--tertiary:hover, .btn--tertiary:active, .btn--tertiary:focus {
+  background-color: #155263;
+  color: #fff;
 }
 
 .nf-form-cont {
@@ -782,6 +796,24 @@ body.mobile-menu-is-open .mobile-menu {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
+@media (min-width: 576px) {
+  .module-section--hero-module h1,
+.module-section--hero-module h2 {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 992px) {
+  .module-section--hero-module h1,
+.module-section--hero-module h2 {
+    font-size: 4rem;
+  }
+}
+@media (min-width: 1200px) {
+  .module-section--hero-module h1,
+.module-section--hero-module h2 {
+    font-size: 5rem;
+  }
+}
 @media (min-width: 768px) {
   .module-section--hero-module p {
     color: #fff;
@@ -819,34 +851,24 @@ body.mobile-menu-is-open .mobile-menu {
   bottom: 0;
   background-color: rgba(217, 217, 217, 0.25);
 }
-@media (min-width: 768px) {
-  .module-section--hero-module .hero__content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
+.module-section--hero-module .hero__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 .module-section--hero-module .hero__buttons {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   gap: 1rem;
-}
-@media (min-width: 768px) {
-  .module-section--hero-module .hero__buttons {
-    flex-direction: row;
-    justify-content: center;
-    gap: 0;
-  }
-  .module-section--hero-module .hero__buttons .btn--secondary {
-    color: #fff;
-  }
+  justify-content: center;
 }
 .module-section--hero-module .hero--small figure.hero__mobile-background,
 .module-section--hero-module .hero--small figure.hero__mobile-background img {

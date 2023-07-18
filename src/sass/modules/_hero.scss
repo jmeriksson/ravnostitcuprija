@@ -7,6 +7,15 @@
     h2 {
         margin-top: 1rem;
         margin-bottom: 1rem;
+        @media (min-width: $breakpoint-sm) {
+            font-size: 3rem;
+        }
+        @media (min-width: $breakpoint-lg) {
+            font-size: 4rem;
+        }
+        @media (min-width: $breakpoint-xl) {
+            font-size: 5rem;
+        }
     }
 
     p {
@@ -48,34 +57,24 @@
     }
 
     .hero__content {
-        @media (min-width: $breakpoint-md) {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-        }
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
     }
 
     .hero__buttons {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
         align-items: center;
         gap: 1rem;
-
-        @media (min-width: $breakpoint-md) {
-            flex-direction: row;
-            justify-content: center;
-            gap: 0;
-
-            .btn--secondary {
-                color: $white;
-            }
-        }
+        justify-content: center;
     }
 
     // Custom styles for small hero
